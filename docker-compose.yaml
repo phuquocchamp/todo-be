@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=demo_db'
+      - 'MYSQL_ROOT_PASSWORD=root'
+      - 'MYSQL_USER=devuser'
+      - 'MYSQL_PASSWORD=user@12345'
+    ports:
+      - '3306:3306'
